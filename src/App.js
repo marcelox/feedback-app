@@ -12,15 +12,9 @@ const comments = [
 ];
 
 const loading = false;
-const showComments = false;
+const showComments = true;
 
-if (loading) return <h1>Loading</h1>
-
-    return (
-        <>
-            <h1>{title}</h1>
-            {showComments ?
-                (
+const commentBlock = (
                     <>
                         <p>Comments ({comments.length})</p>
                         <ul>
@@ -29,10 +23,14 @@ if (loading) return <h1>Loading</h1>
                             ))}
                         </ul>
                     </>
-                )
-            :
-                "no comments"
-            }
+)
+
+if (loading) return <h1>Loading</h1>
+
+    return (
+        <>
+            <h1>{title}</h1>
+            {showComments ? commentBlock : "no comments"}
         </>
     )
 }
