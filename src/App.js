@@ -1,10 +1,13 @@
 import './index.scss';
 
+const title = 'Blog'
+
 function App() {
     return (
         <>
-            <h1>from the app component</h1>
+            <h1>{title}</h1>
             <p>Hi</p>
+            { Math.random() * 5 + 5 }
         </>
     )
 }
