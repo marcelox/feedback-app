@@ -1,24 +1,38 @@
 import './index.scss';
 
-const title = 'Blog'
+function App() {
+
+const title = 'Blog';
 const comments = [
     { id: 1, title: 'Awesome'},
     { id: 2, title: 'Great'},
     { id: 3, title: 'Amazing'},
     { id: 4, title: 'Ridiculous'},
     { id: 5, title: 'Nice'},
-]
+];
 
-function App() {
+const loading = false;
+const showComments = false;
+
+if (loading) return <h1>Loading</h1>
+
     return (
         <>
             <h1>{title}</h1>
-            <p>Comments ({comments.length})</p>
-            <ul>
-                {comments.map((comment) => (
-                    <li key={comment.id}>{comment.title}</li>
-                ))}
-            </ul>
+            {showComments ?
+                (
+                    <>
+                        <p>Comments ({comments.length})</p>
+                        <ul>
+                            {comments.map((comment) => (
+                                <li key={comment.id}>{comment.title}</li>
+                            ))}
+                        </ul>
+                    </>
+                )
+            :
+                "no comments"
+            }
         </>
     )
 }
