@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <h1>{title}</h1>
+      {title && <h1>{title}</h1>}
       <button onClick={() => setComment(!comment)}>{comment ? 'Hide' : 'Show'} Comment</button>
       <div>
         {comment ? commentBlock : "no comments"}
