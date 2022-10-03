@@ -1,8 +1,12 @@
-function Header() {
+function Header({text}) {
   return (
-    <header>
-      <h2>Feedback UI</h2>
-    </header>
+    <>
+      {text &&
+        <header>
+          <h2>{text}</h2>
+        </header>
+      }
+    </>
   )
 }
 

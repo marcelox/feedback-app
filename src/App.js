@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <Header/>
+      <Header text="Feedback UI"/>
       {title && <h1>{title}</h1>}
       <button onClick={() => setComment(!comment)}>{comment ? 'Hide' : 'Show'} Comment</button>
       <div>
