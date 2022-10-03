@@ -1,13 +1,13 @@
 function Header({text}) {
   return (
-    <>
-      {text &&
-        <header>
-          <h2>{text}</h2>
-        </header>
-      }
-    </>
+    <header>
+      <h2>{text}</h2>
+    </header>
   )
+}
+
+Header.defaultProps = {
+  text: 'Feedback UI',
 }
 
 export default Header;
