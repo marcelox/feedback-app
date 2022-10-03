@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './index.scss';
+import Header from './components/Header';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <Header/>
       {title && <h1>{title}</h1>}
       <button onClick={() => setComment(!comment)}>{comment ? 'Hide' : 'Show'} Comment</button>
       <div>
