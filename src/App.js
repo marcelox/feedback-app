@@ -18,14 +18,14 @@ function App() {
   const [comment, setComment] = useState(false);
 
   const commentBlock = (
-    <>
+    <div>
       <p>Comments ({comments.length})</p>
       <ul>
         {comments.map((comment) => (
           <li key={comment.id}>{comment.title}</li>
         ))}
       </ul>
-    </>
+    </div>
   )
 
   if (loading) return <h1>Loading</h1>
@@ -35,9 +35,7 @@ function App() {
       <Header bgColor="#f93" />
       {title && <h1>{title}</h1>}
       <button onClick={() => setComment(!comment)}>{comment ? 'Hide' : 'Show'} Comment</button>
-      <div>
-        {comment ? commentBlock : "no comments"}
-      </div>
+      {comment ? commentBlock : <h3>No comments</h3>}
     </>
   )
 }
