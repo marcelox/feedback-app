@@ -2,8 +2,11 @@ import { useState } from 'react';
 import './index.scss';
 import Header from './components/Header';
 import FeedbackItem from './components/FeedbackItem';
+import FeedBackData from './data/FeedbackData';
 
 function App() {
+
+  const [feedback, setFeedback] = useState(FeedBackData);
 
   const title = 'Blog';
   const comments = [
