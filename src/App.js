@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.scss';
 import Header from './components/Header';
+import FeedbackItem from './components/FeedbackItem';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       {title && <h1>{title}</h1>}
       <button onClick={() => setComment(!comment)}>{comment ? 'Hide' : 'Show'} Comment</button>
       {comment ? commentBlock : <h3>No comments</h3>}
+      <FeedbackItem />
     </>
   )
 }
