@@ -16,7 +16,7 @@ function App() {
     <>
       <Header bgColor="#f93" />
       <h1>Feedback list</h1>
-      <FeedbackList />
+      <FeedbackList feedback={feedback} />
     </>
   )
 }

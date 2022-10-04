@@ -2,17 +2,17 @@ const FeedbackData = [
   {
     id: 1,
     rating: 3,
-    text: 'asdlfj a;sldkfj '
+    text: 'Oranges are great'
   },
   {
     id: 2,
     rating: 1,
-    text: 'asdlfj a;sldkfj '
+    text: 'You can do that'
   },
   {
     id: 3,
     rating: 7,
-    text: 'asdlfj a;sldkfj '
+    text: 'Not everyone is able to...'
   },
 ]
 
