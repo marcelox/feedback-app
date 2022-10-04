@@ -3,6 +3,7 @@ import './index.scss';
 import Header from './components/Header';
 import FeedbackList from './components/FeedbackList';
 import FeedBackData from './data/FeedbackData';
+import Card from './components/shared/Card';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
       <Header bgColor="#f93" />
-      <h1>Feedback list</h1>
+      <Card reverse={true}><h2>Feedback list</h2></Card>
       <FeedbackList feedback={feedback} />
     </>
   )
