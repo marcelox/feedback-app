@@ -1,14 +1,16 @@
+import Card from './shared/Card';
+
 function FeedbackItem({rate, description}) {
 
   return (
-    <div className="card">
+    <Card>
       <div className="number-display">
         {rate}
       </div>
       <div className="text-display">
         {description}
       </div>
-    </div>
+    </Card>
   )
 }
 
