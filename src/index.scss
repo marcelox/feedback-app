@@ -3,6 +3,15 @@ body {
   margin: 0 auto;
 }
 
+@mixin center_elem($size: auto) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: $size;
+  height: $size;
+}
+
 .card {
   font-family: Arial, Helvetica, sans-serif;
   background-color: whitesmoke;
