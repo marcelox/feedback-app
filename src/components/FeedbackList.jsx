@@ -6,7 +6,7 @@ function FeedbackList({feedback}) {
   return (
     <div className="feedback-list">
       {feedback.map((item) => (
-        <FeedbackItem key={item.id} rate={item.rating} description={item.text} />
+        <FeedbackItem id={item.id} key={item.id} rate={item.rating} description={item.text} />
       ))
       }
     </div>
