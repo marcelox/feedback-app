@@ -1,5 +1,6 @@
 import Card from './shared/Card';
 import PropTypes from 'prop-types';
+import {FaTimes} from 'react-icons/fa';
 
 function FeedbackItem({rate, description}) {
 
@@ -8,6 +9,9 @@ function FeedbackItem({rate, description}) {
       <div className="number-display">
         {rate}
       </div>
+      <button className='close'>
+        <FaTimes color='red'/>
+      </button>
       <div className="text-display">
         {description}
       </div>
