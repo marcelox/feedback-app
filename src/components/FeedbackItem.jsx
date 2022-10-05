@@ -1,4 +1,5 @@
 import Card from './shared/Card';
+import PropTypes from 'prop-types';
 
 function FeedbackItem({rate, description}) {
 
@@ -12,6 +13,11 @@ function FeedbackItem({rate, description}) {
       </div>
     </Card>
   )
+}
+
+FeedbackItem.propTypes = {
+  rate: PropTypes.number,
+  description: PropTypes.string,
 }
 
 export default FeedbackItem;
