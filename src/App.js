@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header bgColor="#f93" />
-      <Card reverse={true}><h2>Feedback list</h2></Card>
+      <Card reverse><h2>Feedback list</h2></Card>
       <FeedbackList feedback={feedback} />
     </>
   )
